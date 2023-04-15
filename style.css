@@ -8,15 +8,17 @@
 }
 
 .container {
-  transform: translate(55%, 25%);
-  max-width: 690px;
-  width: 100%;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: auto;
+  margin-top: 5%;
   padding: 30px;
   text-align: center;
   background-color: white;
 }
 .container button {
-  width: 30%;
+  width: fit-content;
+  width: -moz-fit-content;
   padding: 15px;
   border: none;
   margin-top: 10px;
