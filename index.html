@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <ul id="selections">
+            <!-- Select element for language_from -->
+            <li class="row from">
+                <select title="language_from">
+
+                </select>
+            </li>
+            <!-- Button to trigger language swap -->
+            <li class="change">
+                <span class="change">&rArr;</span>
+            </li>
+            <!-- Select element for language_to -->
+            <li class="row to">
+                <select title="language_to"></select>
+            </li>
+        </ul>
+
+        <div class="results">
+            <div class="text-input">
+                <div class="from">
+                    <!-- Textarea for input text to be translated -->
+                    <textarea class="from-text" spellcheck="false" placeholder="type here"></textarea>
+                </div>
+
+                <div class="to">
+                    <!-- Textarea for displaying translated text -->
+                    <textarea class="to-text" readonly disabled spellcheck="false" placeholder="result"></textarea>
+                </div>
+                <!-- Button to trigger translation -->
+                <button>TRANSLATE</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Script tag for including main.js -->
+    <script src="main2.js"></script>
+
+</body>
+
+</html>
