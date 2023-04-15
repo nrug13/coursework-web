@@ -2,7 +2,6 @@
 const countries = {
   "en-GB": "English", // Language code "en-GB" maps to country name "English"
   "az-AZ": "Azerbaijani", // Language code "az-AZ" maps to country name "Azerbaijani"
-  
 };
 
 let fromText = document.querySelector(".from-text");
@@ -10,7 +9,6 @@ let toText = document.querySelector(".to-text");
 let exchagelcon = document.querySelector(".change");
 let selectTag = document.querySelectorAll("select");
 let translateBtn = document.querySelector("button");
-
 
 selectTag.forEach((tag, id) => {
   // Loop through each country_code in the countries object
