@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 .container {
   transform: translate(55%, 25%);
   max-width: 690px;
@@ -14,7 +15,6 @@
   text-align: center;
   background-color: white;
 }
-
 .container button {
   width: 30%;
   padding: 15px;
@@ -28,15 +28,22 @@
 }
 .container #selections {
   padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-/* .hero, */
-.container #selections,
+
 li,
 i {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.container #selections {
+  flex-direction: row;
 }
 .container #selections .row select {
   color: darkgray;
@@ -57,41 +64,33 @@ i {
 .container #selections span:only-child {
   font-size: 50px;
 }
-.container #selections {
-  flex-direction: row;
-}
-/* .groupy {
-  border: 2px solid black;
-  background: lightyellow;
-} */
+
 .results .text-input {
   flex: 1 0 100%;
 }
 .results .text-input > * {
   margin-top: 20px;
-}
-.results .text-input > * {
   border: 1px solid darkgray;
 }
 .results .text-input textarea {
   resize: none;
   height: 100px;
   width: 100%;
-  /* background-color: none; */
   border: none;
   font-size: 20px;
   padding: 10px 15px;
 }
+
 .container {
   border: 3px solid rgb(93, 85, 211);
   border-radius: 5%;
 }
+
 .results button {
   transition: all 0.4s;
 }
-.results button:hover,
-.results button:active {
+.results button:hover, .results button:active {
   transform: 1.1;
   position: relative;
   bottom: 5px;
-}
+}/*# sourceMappingURL=style.css.map */
