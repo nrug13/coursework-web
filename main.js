@@ -73,3 +73,10 @@ exchagelcon.addEventListener("click", function () {
   from.value = temp;
   from.textContent = temp;
 });
+function cleaner() {
+  let textAreas = document.querySelectorAll("textarea");
+  textAreas.forEach(function (area) {
+    area.value = "";
+  });
+}
+cleaner();
