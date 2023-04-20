@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 .container {
   width: fit-content;
   width: -moz-fit-content;
@@ -21,7 +22,7 @@
   padding: 15px;
   border: none;
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 15px;
   background-color: rgb(93, 85, 211);
   border-radius: 100px;
   color: white;
@@ -49,7 +50,7 @@ i {
 .container #selections .row select {
   color: darkgray;
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 2px solid gray;
   background: none;
 }
@@ -83,16 +84,15 @@ i {
 }
 
 .container {
-  border: 3px solid rgb(93, 85, 211);
+  border: 3px rgb(93, 85, 211);
   border-radius: 5%;
 }
 
 .results button {
   transition: all 0.4s;
 }
-.results button:hover,
-.results button:active {
+.results button:hover, .results button:active {
   transform: 1.1;
   position: relative;
   bottom: 5px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

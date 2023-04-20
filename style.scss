@@ -6,25 +6,31 @@
   text-decoration: none;
   list-style: none;
 }
-$color-main :background-color= rgb(93, 85, 211);
-
-.container {
+$color-main: rgb(93, 85, 211);
+@mixin fit {
   width: fit-content;
   width: -moz-fit-content;
+}
+@mixin flexset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  @include fit;
   margin: auto;
   margin-top: 5%;
-
   padding: 30px;
   text-align: center;
   background-color: white;
 
   button {
-    width: fit-content;
-    width: -moz-fit-content;
+    @include fit;
     padding: 15px;
     border: none;
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 15px;
     background-color: $color-main;
     border-radius: 100px;
     color: white;
@@ -33,26 +39,20 @@ $color-main :background-color= rgb(93, 85, 211);
 
   #selections {
     padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    @include flexset();
   }
 }
 
 li,
 i {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include flexset();
 }
 
 .container #selections {
   .row select {
     color: darkgray;
     padding: 5px 10px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 2px solid gray;
     background: none;
   }
@@ -79,31 +79,25 @@ i {
 
 .results .text-input {
   flex: 1 0 100%;
-
   > * {
     margin-top: 20px;
     border: 1px solid darkgray;
   }
-
   textarea {
     resize: none;
     height: 100px;
     width: 100%;
-
     border: none;
     font-size: 20px;
     padding: 10px 15px;
   }
 }
-
 .container {
   border: 3px $color-main;
   border-radius: 5%;
 }
-
 .results button {
   transition: all 0.4s;
-
   &:hover,
   &:active {
     transform: 1.1;
