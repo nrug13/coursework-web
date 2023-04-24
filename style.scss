@@ -43,7 +43,6 @@ $color-main: rgb(93, 85, 211);
     @include flexset();
   }
 }
-
 li,
 i {
   @include flexset();
@@ -69,7 +68,6 @@ i {
     &:hover {
       transform: scale(0.9);
     }
-
     &:only-child {
       font-size: 50px;
     }
@@ -77,7 +75,6 @@ i {
 
   flex-direction: row;
 }
-
 .results .text-input {
   flex: 1 0 100%;
   > * {

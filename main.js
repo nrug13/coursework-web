@@ -30,12 +30,6 @@ selectTag.forEach((tag, id) => {
   }
 });
 
-// Add keyup event listener to fromText input
-fromText.addEventListener("keyup", () => {
-  // If fromText input value is not empty, set toText input value to empty string; otherwise, keep the existing value
-  toText.value = fromText.value ? "" : toText.value;
-});
-
 // Add click event listener to translateBtn
 translateBtn.addEventListener("click", async () => {
   // Get input text value and remove white spaces
@@ -47,8 +41,6 @@ translateBtn.addEventListener("click", async () => {
   if (!text) {
     return;
   }
-  // Set placeholder of toText input to "translating"
-  toText.setAttribute("placeholder", "translating");
   // Construct API URL with input text and translation languages
   const apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
   // Fetch translation data from API using async/await
@@ -56,20 +48,15 @@ translateBtn.addEventListener("click", async () => {
   const data = await response.json();
   // Set the translated text to toText input value
   toText.value = data.responseData.translatedText;
-  // Set placeholder of toText input back to "Translation"
-  toText.setAttribute("placeholder", "Translation");
 });
 exchagelcon.addEventListener("click", function () {
   let temp;
   let from = document.querySelectorAll("option[selected]")[0];
   let to = document.querySelectorAll("option[selected]")[1];
-
   temp = to.value;
   temp = to.value;
-
   to.value = from.value;
   to.textContent = from.value;
-
   from.value = temp;
   from.textContent = temp;
 });
