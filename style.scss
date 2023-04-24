@@ -18,6 +18,7 @@ $color-main: rgb(93, 85, 211);
   justify-content: space-between;
 }
 .container {
+  border: 5px solid $color-main !important;
   @include fit;
   margin: auto;
   margin-top: 5%;

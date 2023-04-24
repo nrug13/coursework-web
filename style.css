@@ -8,6 +8,7 @@
 }
 
 .container {
+  border: 5px solid rgb(93, 85, 211) !important;
   width: fit-content;
   width: -moz-fit-content;
   margin: auto;
